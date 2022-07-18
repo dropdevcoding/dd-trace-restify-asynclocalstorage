@@ -1,0 +1,19 @@
+{
+  "name": "dd-trace-restify-asynclocalstorage",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "",
+  "scripts": {
+    "run:restify:without:datadog": "node src/index.js restify",
+    "run:restify:with:datadog": "node -r dd-trace/init src/index.js restify",
+    "run:express:with:datadog": "node -r dd-trace/init src/index.js express"
+  },
+  "author": {
+    "name": "test"
+  },
+  "dependencies": {
+    "dd-trace": "^2.10.0",
+    "express": "^4.18.1",
+    "restify": "^8.6.1"
+  }
+}
